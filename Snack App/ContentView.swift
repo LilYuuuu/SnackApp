@@ -30,7 +30,7 @@ struct ContentView: View {
                             
                             VStack(alignment: .leading){
                                 Text("购物车")
-                                    .font(.system(size: 26,weight: .semibold))
+                                    .font(.system(size: 20,weight: .semibold))
                                 
                                 Text("\(cartManager.products.count) 项")
                                     .font(.system(size: 18))
