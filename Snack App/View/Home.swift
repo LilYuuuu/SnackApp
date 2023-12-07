@@ -46,7 +46,11 @@ struct Home: View {
                             }
                                 
                             Button{
-                                self.navigateTo = true
+                                if !userManager.isLoggedIn{
+                                    self.navigateToLogin = true
+                                }else{
+                                    self.navigateTo = true
+                                }
                             }label: {
                                 Label("钱包", systemImage: "heart.fill")
                             }
